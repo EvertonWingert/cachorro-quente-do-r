@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="store">
+
+<head>
+    <meta charset="utf-8">
+    <title>HotDog</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="./js/app.js"></script>
+    
+
+</head>
+
+<body ng-controller="StoreController as store">
+    <div class="superinfo-bg">
+        <div class="superinfo">
+            <p>Seg/Sab - 10:00 às 18:00</p>
+            <p>(51) 4002-8922</p>
+            <p>Av. bla bla bla</p>
+        </div>
+    </div>
+    <header class="menu-bg">
+        <div class="menu">
+            <div class="menu-logo"> 
+                <img class="logo" src="./assets/Logo.svg"/> 
+            </div>
+            <nav class="menu-nav" >
+                <ul class="nav-links">
+                    <li> <a href="#">Principal</a> </li>
+                    <li> <a href="./pages/sobre/sobre.html">Sobre</a> </li>
+                    <li> <a href="./pages/contato/contato.html">Contato</a> </li>
+                    <li>
+                        <div class="dropdown" >
+                            <a href="#" ng-click="store.show()">Carrinho</a>
+                            <ul id="drop-content" ng-show="store.dropdown">
+                                    <li ng-repeat="item in store.carrinho" class="li-cardapio">
+                                        <img class="img-carrinho" src="{{item.imgProduto}}">
+                                        <div>
+                                            <p>{{item.nome}}</p> 
+                                            <p>R$ {{item.preco}}</p> 
+                                            <p>X {{item.qtd}}</p> 
+                                            <button class="btn-remover" ng-click="store.removeItem(item)">Remover</button>
+                                        </div>
+                                    </li>
+                                    <p>Total = R${{store.totalPrice}}</p>  
+                            </ul>
+                            
+
+
+                        </div>
+                        </li>
+                    <li>
+                        <div class="carrinho">
+                            <img src="./assets/shopping_cart-white-18dp.svg" class="shop-icon">
+                            <span href="#" id="cont">{{store.totalItems}}</span>                          
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Cardápio</h1>
+        <div id="list">
+            <ul id="card-list">
+                <li class="card" ng-repeat="item in store.todo">
+                    <div id="img-container">
+                        <img src="{{item.imgProduto}}" alt="hotdog" class="img-produto">
+                    </div>
+                    <p class="nome-produto">{{item.nome}}</p>    
+                    <div class="card-avalicao"> 
+                        <img src="./assets/star.svg" alt="hotdog"> 
+                        <p>{{item.avaliacao}}</p> 
+                    </div>
+                    <div class="ingredientes">
+                        <div>
+                            <p class="title-ingrediente">Ingredientes</p>
+                        </div>
+                        <ul>
+                            <li ng-repeat="ingrediente in item.ingredientes">
+                                <p>{{ingrediente}}</p>
+                            </li>   
+                        </ul>
+                    </div>
+                    <p class="preco">R$ {{item.preco}}</p> 
+                    <button class="btn-comprar" ng-click="store.addItem(item)" >Comprar</button>
+                </li>
+            </ul>
+            
+        </div>
+
+        </div>
+    </main>
+
+
+    <footer class="fixed">
+		<div class="newsletter">
+			<div class="newsletter-info">
+				<h1>Newsletter</h1>
+				<p>Assine e fique por dentro das promoções</p>
+			</div>
+			<form name="form" onsubmit="return (validateFormFooter());" class="newsletter-form">
+				<input type="texte" name="email" placeholder="Seu e-mail">
+				<button type="submit">Assinar</button>
+			</form>
+		</div>
+    </footer>
+    
+    <script src="./js/formulario.js"></script>
+
+</body>
+
+
+</html>

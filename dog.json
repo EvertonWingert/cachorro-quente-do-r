@@ -1,0 +1,58 @@
+[
+    {
+       "id": 5435,
+       "nome": "Simples",
+       "preco": 9,
+       "qtd": 1,
+       "imgProduto": "./assets/hotdog.svg",
+       "avaliacao": 4,
+       "ingredientes": [ "Pão", "Salsicha", "Molho especial", "Batata palha", "Milho", "Ervilha" ]
+    },
+    {
+       "id": 3213,
+       "nome": "Duplo",
+       "preco": 11,
+       "qtd": 1,
+       "imgProduto": "./assets/hotdog.svg",
+       "avaliacao": 5,
+       "ingredientes": [ "Pão", "2x Salsicha", "Molho especial", "Batata palha", "Milho", "Ervilha" ]
+       
+    },
+    {
+       "id": 52,
+       "nome": "Triplo",
+       "preco": 13,
+       "qtd": 1,
+       "imgProduto": "./assets/hotdog.svg",
+       "avaliacao": 4.3,
+       "ingredientes": [ "Pão", "3x Salsicha", "Molho especial", "Batata palha", "Milho", "Ervilha" ]
+
+    },
+    {
+       "id": 252,
+       "nome": "Quadruplo",
+       "preco": 15,
+       "qtd": 1,
+       "imgProduto": "./assets/hotdog.svg",
+       "avaliacao": 3.9,
+       "ingredientes": [ "Pão", "4x Salsicha", "Molho especial", "Batata palha", "Milho", "Ervilha" ]
+    },
+    {
+       "id": 231,
+       "nome": "Vegano",
+       "preco": 9,
+       "qtd": 1,
+       "imgProduto": "./assets/hotdog.svg",
+       "avaliacao": 5,
+       "ingredientes": [ "Pão", "Salsicha vegana", "Molho especial", "Batata palha", "Milho", "Ervilha" ]
+    },
+    {
+       "id": 567,
+       "nome": "Calabresa",
+       "preco": 10,
+       "qtd": 1,
+       "imgProduto": "./assets/hotdog.svg",
+       "avaliacao": 4.5,
+       "ingredientes": [ "Pão", "Calabresa", "Molho especial", "Batata palha", "Milho", "Ervilha" ]
+    }
+ ]

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>Contato</title>
+    <link rel="stylesheet" type="text/css" href="./contato.css"> 
+	<link rel="stylesheet" type="text/css" href="../../styles.css"> 
+	<script src="../../js/formulario.js"></script>
+
+</head>
+
+<body>
+	<div class="superinfo-bg">
+		<div class="superinfo">
+			<p>Seg/Sab - 10:00 às 18:00</p>
+			<p>(51) 4002-8922</p>
+			<p>Av. bla bla bla</p>
+		</div>
+	</div>
+	<header class="menu-bg">
+		<div class="menu">
+			<div class="menu-logo"> 
+                <img class="logo" src="../../assets/Logo.svg"> 
+            </div>
+			<nav class="menu-nav">
+				<ul class="nav-links">
+                    <li> <a href="../../index.html">Principal</a> </li>
+                    <li> <a href="../sobre/sobre.html">Sobre</a> </li>
+					<li> <a href="../contato/contato.html">Contato</a> </li>
+					<li>
+                        <div class="dropdown" >
+                            <a href="#">Carrinho</a>
+                        </div>
+                        </li>
+                    <li>
+                        <div class="carrinho">
+                            <img src="../../assets/shopping_cart-white-18dp.svg" class="shop-icon">
+                            <span href="#" id="cont">0</span>                          
+                        </div>
+                    </li>
+                </ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+
+		<div class="main">
+			<div>
+				<h1>Contato</h1>
+				<div class="content">
+					<form class="form" name="form" onsubmit="return (validateForm());">
+						<div class="form-group">
+							<input type="text" name="nome" id="nome" placeholder="Nome">
+						</div>
+						<div class="form-group">
+							<input type="text" name="email" id="email" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<textarea name="Assunto" id="assunto" placeholder="Assunto"></textarea>
+						</div>
+						<div class="form-group">
+							<textarea name="Mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+						</div>
+						<input class="btn-submit" type="submit" value="Enviar">
+							
+					</form>
+
+				</div>
+                    
+		</div>
+		</div>
+	</main>
+	<footer class="fixed">
+		<div class="newsletter">
+			<div class="newsletter-info">
+				<h1>Newsletter</h1>
+				<p>Assine e fique por dentro das promoções</p>
+			</div>
+			<form name="form" onsubmit="return (validateFormFooter());" class="newsletter-form">
+				<input type="texte" name="email" placeholder="Seu e-mail">
+				<button type="submit">Assinar</button>
+			</form>
+		</div>
+	</footer>	
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.form {
+    padding: 20px;
+    margin:0 auto;
+    width: 400px;
+}
+.form .form-group {
+    padding-bottom: 10px;
+}
+.form label {
+    display: block;
+}
+.form input[type="text"], .form textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+.form input[type="submit"]{
+    background-color: #BF0426;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
