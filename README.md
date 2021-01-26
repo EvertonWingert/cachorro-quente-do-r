@@ -18,4 +18,4 @@ Projeto feito com angular js.
    </p>
  </li>
 </ul>
-<p><a href="https://evertonwingert.github.io/passwordGenerator-JavaScript" target="_blank">Online demo</a></p>
+<p><a href="https://evertonwingert.github.io/hotdogs-html5/" target="_blank">Online demo</a></p>
