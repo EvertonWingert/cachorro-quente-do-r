@@ -1,8 +1,6 @@
 # hotdogs
  
 Projeto feito com angular js.
-
-# Gerador-De-Senha
 <h1>Tecnologias ultilizadas</h1>
 <ul>
   <li>
